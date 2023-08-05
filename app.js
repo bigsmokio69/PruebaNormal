@@ -3,50 +3,29 @@ var arreglo=[];
 
 function ducha() {
     const litrosXmin=10;
-    let minutos=document.getElementById('entrada');
-    let veces;
-    let total1=((litrosXmin*minutos)*veces);
+    let minutos=parseFloat(document.getElementById("pregunta1").value);
+    let total1=(litrosXmin*minutos);
+    console.log(`Litros gastados en la ducha: ${total1}`);
     return arreglo.push(total1)
 }
 function CicloDeLavado() {
     const litrosLavadora=55;
-    let veces;
+    let veces=parseInt(document.getElementById("pregunta2").value);
     let total2=(litrosLavadora*veces);
+    console.log(`Litros gastados lavando ropa: ${total2}`);
     return arreglo.push(total2)
 }
 function DescargaSanitario() {
     const litrosSanitario=8;
-    let veces;
+    let veces=parseInt(document.getElementById("pregunta3").value);
     let total3=litrosSanitario*veces;
-    return arreglo.push(total3)
-}
-function LavadoTrastes() {
-    const litrosTrastes=7.75;
-    let minutos;
-    let total4=litrosTrastes*minutos;
-    return arreglo.push(total4)
-}
-function lavadoManos() {
-    const litroLavadoManos=5;
-    let minutos;
-    let veces;
-    let total5=(litroLavadoManos*minutos)*veces;
-    return arreglo.push(total5)
-}
-function Lavavajillas() {
-    const litrosLavavajillas=12.75;
-    let veces;
-    let total6=litrosLavavajillas*veces;
-    return arreglo.push(total6)
-}
-function consumoDiario() {
-    let litrosConsumoPersonal;
-    return arreglo.push(litrosConsumoPersonal);
-}
-function cocina() {
-    let litrosCocina;
-    return arreglo.push(litrosCocina);
-}
-function lavadoAuto() {
+    console.log(`Litros gastados en el sanitario: ${total3}`);
+    arreglo.push(total3);
+
+    /*var sumaTotal = arreglo.reduce(function(total, elemento) {
+        return total + elemento;
+    }, 0);
     
+    console.log("La suma total es: " + sumaTotal); */
 }
+
