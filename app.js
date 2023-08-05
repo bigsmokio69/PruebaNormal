@@ -1,4 +1,4 @@
-var arreglo=[];
+var arreglo=[]; //arreglo para posteriormente usarlo para sumar el total de los litros de agua
 
 
 function ducha() {
@@ -7,14 +7,15 @@ function ducha() {
     let total1=(litrosXmin*minutos);
     console.log(`Litros gastados en la ducha: ${total1}`);
     return arreglo.push(total1)
-}
+}//fin de la funcion para las duchas
+
 function CicloDeLavado() {
     const litrosLavadora=55;
     let veces=parseInt(document.getElementById("pregunta2").value);
     let total2=(litrosLavadora*veces);
     console.log(`Litros gastados lavando ropa: ${total2}`);
     return arreglo.push(total2)
-}
+}//fin de la funcion para el ciclo de lavado
 function DescargaSanitario() {
     const litrosSanitario=8;
     let veces=parseInt(document.getElementById("pregunta3").value);
@@ -27,5 +28,6 @@ function DescargaSanitario() {
     }, 0);
     
     console.log("La suma total es: " + sumaTotal); */
-}
+
+}//fin de la funcion para el sanitario El codigo comentado es para la suma total de los litros de agua con el metodo reduce
 
